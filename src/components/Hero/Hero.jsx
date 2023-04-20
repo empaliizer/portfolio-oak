@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import H1 from '../../typography/h1'
 import H3 from '../../typography/h3'
 import BgPic from '../../assets/profile.png'
-import StyledCol1 from '../Common/Col1'
-import Col2 from '../Common/Col2'
+import { StyledCol1 } from '../Common/Col1'
+import { StyledCol2 } from '../Common/Col2'
 import BgCircle from '../Common/BgCircle'
 
 const StyledHero = styled.div`
@@ -48,9 +48,9 @@ const Hero = () => {
                   </RoundButton>
                 </TextContent>
             </StyledCol1>
-            <Col2>
+            <StyledCol2>
                 <BgImg /> 
-            </Col2>
+            </StyledCol2>
       </StyledHero>     
   )
 }
