@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import H1 from '../../typography/h1'
 import H3 from '../../typography/h3'
 import BgPic from '../../assets/profile.png'
-import { StyledCol1 } from '../Common/Col1'
-import { StyledCol2 } from '../Common/Col2'
+import Col1 from '../Common/Col1'
+import Col2 from '../Common/Col2'
 import BgCircle from '../Common/BgCircle'
 
 const StyledHero = styled.div`
@@ -39,7 +39,7 @@ margin-top: 55px;
 const Hero = () => {
   return (
       <StyledHero>
-            <StyledCol1>
+            <Col1>
                 <TextContent>
                   <H1>HI, I AM EMELIE</H1>
                   <H3>JUNIOR FRONTEND DEVELOPER UX/UI DESIGNER</H3>
@@ -47,10 +47,10 @@ const Hero = () => {
                     <p>Se my work</p>
                   </RoundButton>
                 </TextContent>
-            </StyledCol1>
-            <StyledCol2>
+            </Col1>
+            <Col2>
                 <BgImg /> 
-            </StyledCol2>
+            </Col2>
       </StyledHero>     
   )
 }
