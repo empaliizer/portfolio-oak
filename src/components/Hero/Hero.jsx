@@ -2,10 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import H1 from '../../typography/h1'
 import H3 from '../../typography/h3'
+import P from '../../typography/p'
 import BgPic from '../../assets/profile.png'
 import Col1 from '../Common/Col1'
 import Col2 from '../Common/Col2'
 import BgCircle from '../Common/BgCircle'
+import BigCircle from '../Common/BigCircle'
 
 const StyledHero = styled.div`
 display: flex; 
@@ -25,27 +27,23 @@ min-height: 40rem;
 const TextContent = styled.div`
 display: flex;
 flex-direction: column;
-`;
-
-const RoundButton = styled.button`
-width: 8.75rem;
-height: 8.75rem;
-border-radius: 100%;
-background-color: #fff;
-border: none; 
-margin-top: 55px;
+position: relative;
+bottom: 2rem;
 `;
 
 const Hero = () => {
   return (
       <StyledHero>
             <Col1>
+              <BigCircle />
                 <TextContent>
                   <H1>HI, I AM EMELIE</H1>
-                  <H3>JUNIOR FRONTEND DEVELOPER UX/UI DESIGNER</H3>
-                  <RoundButton>
-                    <p>Se my work</p>
-                  </RoundButton>
+                  <H3>FRONTEND DEVELOPER </H3>
+                  <H3>UX/UI DESIGNER</H3>
+                  <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et omnis 
+                    laboriosam aut voluptas unde cum qui, odio exercitationem eligendi 
+                    ullam necessitatibus amet in doloremque, maxime vitae quas, ex 
+                    voluptatem numquam!</P>
                 </TextContent>
             </Col1>
             <Col2>
