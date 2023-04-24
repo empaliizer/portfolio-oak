@@ -50,7 +50,7 @@ const App = () => {
             </Route>
             <Route path="/">
               <MainContainer>
-                <Hero text="MyHero"/>
+                <Home/>
               </MainContainer>
             </Route>
           </Switch>
