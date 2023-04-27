@@ -13,8 +13,8 @@ const DecoCircle = styled.div`
     top: -14rem;
     left: -4rem;
 
-    @media screen and (max-width:767px){
-        
+    @media screen and (max-width:900px){
+      display: none;
     }
 `;
 

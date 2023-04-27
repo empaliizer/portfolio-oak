@@ -8,6 +8,10 @@ const StyledFooter = styled.footer `
   display: flex;
   flex-direction: column;
   margin-top: 7rem;
+  
+  @media screen and (max-width:900px){
+  margin-top: 1rem;
+}
 `;
 
 const StyledFooterInner = styled.div`
@@ -20,8 +24,11 @@ gap: 56rem;
     gap: 32rem;
 }
 
-@media screen and (max-width:900px) {
-    gap: 5rem;
+@media screen and (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
 }
 
 `;

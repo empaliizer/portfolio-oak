@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import H1 from '../typography/h1';
 import Container from '../components/Container/Container';
 import ContainerInner from '../components/Container/ContainerInner';
-import Hero from '../components/Hero/Hero';
 import TextContent from '../components/Hero/TextContent';
 import Col1 from '../components/Common/Col1';
 import P from '../typography/p';
 import ProfileRev from '../assets/Profile-reverse.png'
 import Col2 from '../components/Common/Col2';
+import BgImg from '../components/Hero/Hero'
 import SmallCircle from '../components/Common/SmallCircle';
 
 const StyledQoute = styled.div`
@@ -22,7 +22,6 @@ const About = () => {
             <Container>
                 <ContainerInner>
                     <Col1>
-                        <Hero>
                             <TextContent>
                                 <SmallCircle />
                                 <H1>THIS IS ME</H1>
@@ -39,10 +38,9 @@ const About = () => {
                                 designer. Now i want to try something new and to start working at bigger companies and work as a web designer/UX-designer together with a development team.
                                 </P>
                             </TextContent>
-                        </Hero>
                     </Col1>
                     <Col2>
-                        <img src={ProfileRev} alt="" />
+                        <BgImg bgImg={ProfileRev}/>
                         <StyledQoute>
                             <P>“Being creative is not a hobby, it is a way of life”</P>
                         </StyledQoute>

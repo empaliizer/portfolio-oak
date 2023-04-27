@@ -5,7 +5,13 @@ const StyledContainerInner = styled.div`
 display: flex;
 flex-direction: row;
 width: 90%;
-margin: auto 0;
+max-width: 1400px;
+
+@media screen and (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+
+}
 `; 
 
 const ContainerInner = ({ children }) => {

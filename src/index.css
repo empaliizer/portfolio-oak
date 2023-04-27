@@ -3,6 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: #000;
+  background-color: #F6F5F1;
   
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,42 +20,6 @@ body {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #F6F5F1;
   }
 }
-/* Fonts
-font-family: "Plus Jakarta Sans", sans-serif; */
-
-/* Colors
-color: #F53B57 (accent färg)
-color: #222; (mörk färg)
-color: #777; (grå)
-color: #000; (svart)
-color: #F1F1F1; (ljus grå)
-color: #fff; (Vit)  */
-
-
-/* Grid 
-display: grid; 
-grid-template-columns: [full-start] minmax(10vw, 1fr)[main-start] minmax(0, 75rem)[main-end] minmax(10vw, 1fr) [full-end];
-*/
-
-/* Buttons
-background-color: #F53B57;
-border: 0; 
-height: 80px
-padding: 2rem; 
-color: white; 
-*/
-
-/* section
-display: grid; 
-grid-template-columns: [full-start] minmax(10vw, 1fr)[main-start] minmax(0, 75rem)[main-end] minmax(10vw, 1fr) [full-end];
-width: 100%
-
-section-inner
-grid-column: main; 
-
-section-full
-grid-column: full
-*/

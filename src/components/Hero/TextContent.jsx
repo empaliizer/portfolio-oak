@@ -9,6 +9,13 @@ position: relative;
 z-index: 1;
 bottom: 2rem;
 left: 16rem;
+
+@media screen and (max-width:900px){
+  width: 100%;
+  position: unset;
+  bottom: 0;
+  left: 0;
+}
 `;
 
 const TextContent = ({ children }) => {

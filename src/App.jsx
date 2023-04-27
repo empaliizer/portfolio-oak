@@ -48,10 +48,8 @@ const App = () => {
             <Route path="/portfolio">
               <Portfolio />
             </Route>
-            <Route path="/">
-              <MainContainer>
-                <Home/>
-              </MainContainer>
+            <Route path="/" exact>
+              <Home/>
             </Route>
           </Switch>
             <Footer />
