@@ -13,23 +13,28 @@ import BgPic from '../assets/profile.png'
 
 const Home = () => {
     const [title, setTitle] = useState('');
-    const originalTitle = 'HI, I AM EMELIE'
+    const originalTitle = 'HI, I AM EMELIE';
+    const originalTitleLength = title.length; 
+    let animationSpeed = 500;
+
     useEffect(() => {
-        console.log('...');
+        for(let i = 0; i < originalTitleLength; i++) {
         // Skapa loop & lägg till bokstav i title
         setTimeout(() => {
+            const span = document.createElement('span');
+            span.innerHTML = title[i];
+            originalTitle.appendChild(span);
             setTitle(originalTitle);
-        }, 2000);
+        }, animationSpeed);
+        animationSpeed += 100;
+    }}, 
+    []);
 
-        setTimeout(() => {
-            setTitle( prev => { return prev + ' hej' })
-        }, 5000);
-    },[])
     return (
         <Hero bgImg={BgPic}>
             <TextContent>
                 <BigCircle />
-                <H1>{ title }</H1>
+                <H1>{ originalTitle }</H1>
                 <H3>FRONTEND DEVELOPER </H3>
                 <H3>UX/UI DESIGNER</H3>
                 <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et omnis 

@@ -12,6 +12,10 @@ position: absolute;
 z-index: -1;
 top: -10rem;
 left: -3rem;
+
+@media screen and (max-width:900px){
+      display: none;
+    }
 `;
 
 
