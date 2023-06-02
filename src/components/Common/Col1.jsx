@@ -7,6 +7,7 @@ flex-direction: column;
 margin: 0 auto;
 align-items: flex-start;
 justify-content: center;
+width: 50%;
 
 @media screen and (max-width:900px){
       margin-top: 2rem;

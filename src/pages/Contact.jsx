@@ -9,9 +9,9 @@ import HeadingAnimation from '../components/Animations/HeadingAnimation';
 
 const Contact = () => {
     const AnimationTexts = [
-        "UX-Design",
-        "UI-Design",
-        "Frontend"
+        "UI-design",
+        "UX-design",
+        "React"
     ]
 
     const [animationIndex, setAnimationIndex] = useState(0);
@@ -23,13 +23,13 @@ useEffect(() => {
         } else {
             setAnimationIndex(animationIndex + 1);
         }
-    }, 4000);
+    }, 6000);
 }, [animationIndex])
 
     return (
         <Container>
             <ContainerInnerCol>
-                <H1>My services are <HeadingAnimation text={AnimationTexts[animationIndex]} /></H1>
+                <H1>I can offer you <HeadingAnimation text={AnimationTexts[animationIndex]} /></H1>
                 <H2>You can always get in touch with me trough</H2>
                 <H1>emelie.ek@chasacademy.se</H1>
             </ContainerInnerCol>

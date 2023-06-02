@@ -6,6 +6,7 @@ display: flex;
 flex-direction: row;
 width: 90%;
 max-width: 1400px;
+gap: 3rem;
 
 @media screen and (max-width: 1000px) {
     flex-direction: column;

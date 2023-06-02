@@ -4,18 +4,10 @@ import Container from '../Container/Container'
 import ContainerInner from '../Container/ContainerInner'
 import Col1 from '../Common/Col1'
 import Col2 from '../Common/Col2'
+import BgImg from '../Common/BgImg'
+import ProfileImg from '../../assets/profile.png'
 
-const BgImg = styled.div`
-display: flex;
-background-image: url(${props => props.src});
-background-size: contain;
-background-position: center;
-background-repeat: no-repeat;
-min-width: 34rem;
-min-height: 40rem;
-`;
-
-const Hero = ({ bgImg, children }) => {
+const Hero = ({ children }) => {
   return (
       <Container>
         <ContainerInner>
@@ -23,7 +15,7 @@ const Hero = ({ bgImg, children }) => {
               { children }
             </Col1>
             <Col2>
-                <BgImg src={bgImg} /> 
+                <BgImg src={ProfileImg} /> 
             </Col2>
         </ContainerInner>
       </Container>     

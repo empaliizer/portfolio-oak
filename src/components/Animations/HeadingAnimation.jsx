@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import styled, { keyframes } from "styled-components";
-import AnimationTexts from "../../pages/Contact";
+import H1 from '../../typography/h1';
+import AnimationTexts from '../../pages/Contact'
+
 
 const Animation = keyframes`
     0% { opacity: 0; transform: translateY(-100px) skewY(10deg) skewX(10deg) rotateZ(30deg); filter: blur(10px);  }
@@ -46,26 +48,28 @@ const Wrapper = styled.span`
         span:nth-child(8) {
             animation-delay: 0.8s;
         }
-        span:nth-child() {
+        span:nth-child(9) {
             animation-delay: 0.9s;
         }
 `;
 
 const TextAnimations = ({text}) => {
 
+    if(typeof text === 'undefined') {
+        return null
+    }
+    const loopWord = () => {
+        const ele = [];
+        for(let i in text) {
+            ele.push(<span>{text[i]}</span>)
+        }
+        return ele;
+    }
   return (
     <Wrapper>
         <h1 aria-label="Text" role="text">
-            <span aria-hidden="true">U</span>
-            <span aria-hidden="true">X</span>
-            <span aria-hidden="true">-</span>
-            <span aria-hidden="true">D</span>
-            <span aria-hidden="true">e</span>
-            <span aria-hidden="true">s</span>
-            <span aria-hidden="true">i</span>
-            <span aria-hidden="true">g</span>
-            <span aria-hidden="true">n</span>
-        </h1>
+            { loopWord() }
+        </h1>    
     </Wrapper>
   )
 }
