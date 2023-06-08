@@ -4,15 +4,44 @@ import Container from '../components/Container/Container';
 import ContainerInner from '../components/Container/ContainerInner';
 import Col1 from '../components/Common/Col1';
 import Col2 from '../components/Common/Col2';
-import PortfolioImg from '../components/Common/PortfolioImg';
 import H1 from '../typography/h1';
-import DevPic from '../assets/development.jpg';
-import UxPic from '../assets/uxui.jpg';
+import P from '../typography/p';
+import BgImg from '../components/Common/BgImg';
+import WorkImg from '../assets/portfolioImg.png';
+import Line from '../components/Common/Line';
+import LinedButton from '../components/Common/LinedButton';
+import ArrowButton from '../components/Common/ArrowButton';
 
-const Overlay = styled.div`
-background-color: #000;
-opacity: 40%;
+const TopHeading = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 189px;
+margin-bottom: 36px;
 `;
+
+const Category = styled.div`
+display: flex;
+font-weight: 600;
+`;
+
+const Buttons = styled.div`
+display: flex;
+`;
+
+const TextContainer = styled.div`
+display: flex;
+flex-direction: column;
+font-family: 'Rubik', sans-serif;
+letter-spacing: 0rem;
+`; 
+
+const ButtonContainer = styled.div`
+display: flex;
+justify-content: flex-end;
+flex-direction: row;
+`; 
+
 
 const Work = () => {
 
@@ -20,17 +49,40 @@ const Work = () => {
         <Container>
             <ContainerInner>
                 <Col1>
-                    <H1>UX/UI Design</H1>
-                    <Overlay>
-                        <PortfolioImg src={UxPic} />
-                    </Overlay>
+                    <BgImg src={WorkImg} />
                 </Col1>
                 <Col2>
-                    <H1>Development</H1>
-                    <Overlay>
-                        <PortfolioImg src={DevPic} />
-                    </Overlay>
+                    <TopHeading>
+                        <Category>
+                            <P>Projectname</P>
+                            <Line />
+                            <P>UX/DEV</P>
+                        </Category>
+                        <Buttons>
+                            {/* Glöm inte att lägga in src till knapparna */}
+                            <LinedButton>Prototype</LinedButton> 
+                            <Line />
+                            <LinedButton>Case study</LinedButton>
+                        </Buttons>
+                    </TopHeading>
+                    <TextContainer>
+                        <H1>Projectheading</H1>
+                        <P>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+                            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</P>
+                    </TextContainer>
+                    <ButtonContainer>
+                        <ArrowButton>
+                            PIL
+                        </ArrowButton>
+                        <ArrowButton>
+                            PIL
+                        </ArrowButton>
+                    </ButtonContainer>
+                    
                 </Col2>
+              
             </ContainerInner>
         </Container>          
     );
