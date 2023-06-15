@@ -7,7 +7,18 @@ const links = [
     {
         id: 2,
         to: "/portfolio",
-        text: "Latest Work"
+        text: "Latest Work",
+
+    //     submenu: [
+    //     {
+    //         text: 'UX/UI',
+    //         to: '/webdesign',
+    //     },
+    //     {
+    //         text: 'Development',
+    //         to: '/webdev',
+    //     },
+    //   ],
     },
     {
         id: 3,

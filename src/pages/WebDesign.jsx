@@ -43,7 +43,7 @@ flex-direction: row;
 `; 
 
 
-const Work = () => {
+const WebDesign = () => {
 
     return (
         <Container>
@@ -92,4 +92,4 @@ const Work = () => {
     );
 }
 
-export default Work;
+export default WebDesign;
