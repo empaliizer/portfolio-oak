@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { dev } from '../data/data'
 import Container from '../components/Container/Container';
 import ContainerInner from '../components/Container/ContainerInner';
 import Col1 from '../components/Common/Col1';
@@ -44,7 +45,7 @@ flex-direction: row;
 
 
 const Work = () => {
-
+console.log(dev)
     return (
         <Container>
             <ContainerInner>

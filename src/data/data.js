@@ -1,3 +1,5 @@
+import GGImage from "../assets/dev/number-guessing-game.png";
+
 const links = [
     {
         id: 1,
@@ -7,18 +9,7 @@ const links = [
     {
         id: 2,
         to: "/portfolio",
-        text: "Latest Work",
-
-    //     submenu: [
-    //     {
-    //         text: 'UX/UI',
-    //         to: '/webdesign',
-    //     },
-    //     {
-    //         text: 'Development',
-    //         to: '/webdev',
-    //     },
-    //   ],
+        text: "Latest work"
     },
     {
         id: 3,
@@ -69,30 +60,11 @@ const icons = [
     }
 ]
 
-const contact = [
-    {
-        id: 1,
-        contact: "+46 (0)704869074"
-    },
-    {
-        id: 1,
-        contact: "+46 (0)704869074"
-    },
-    {
-        id: 1,
-        contact: "+46 (0)704869074"
-    },
-    {
-        id: 1,
-        contact: "+46 (0)704869074"
-    }
-]
-
 const dev = [
     {
             id: 1,    
             name: "Guessing game",
-            img: "/img/number-guessing-game.png",
+            img: GGImage,
             link: " https://6362af7fb58cff45bf8b3dbd--idyllic-chaja-f20318.netlify.app/"
     },
     {

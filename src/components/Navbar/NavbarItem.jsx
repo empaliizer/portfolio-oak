@@ -29,19 +29,7 @@ const StyledLinkDropdown = styled.div`
     background: white;
 `;
 
-const NavbarItem = ({ id, to, text, submenu = []}) => {
-    if(submenu.length > 0) {
-        return (
-            <StyledLinkDropdown key={id} to={to}>
-                <div>{text}</div>
-                <submenu>
-                    { submenu.map((item, index) => (
-                        <submenuItem key={index} to={item.to}>{item.text}</submenuItem>
-                    )) }
-                </submenu>
-            </StyledLinkDropdown>
-        )
-    }
+const NavbarItem = ({ id, to, text }) => {
     return (
         <StyledLink key={id} to={to}>{text}</StyledLink>
     )
