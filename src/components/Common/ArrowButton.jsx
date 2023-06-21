@@ -11,10 +11,10 @@ margin-left: 10px;
 margin-top: 60px;
 `;
 
-const ArrowButton = ({children}) => {
+const ArrowButton = ({children, onClick}) => {
   return (
     // Hur lägger jag in svg-pilen?
-    <Button>{children}</Button>
+    <Button onClick={() => { onClick() }}>{children}</Button>
   )
 }
 

@@ -10,6 +10,6 @@ justify-content: center;
 width: 50%;
 
 @media screen and (max-width:900px){
-      margin-top: 2rem;
+      width: 100%;
     }
 `;
