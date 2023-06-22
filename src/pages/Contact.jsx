@@ -11,6 +11,7 @@ const Contact = () => {
     const AnimationTexts = [
         "UI-design",
         "UX-design",
+        "Developer",
         "React"
     ]
 
@@ -29,9 +30,9 @@ useEffect(() => {
     return (
         <Container>
             <ContainerInnerCol>
-                <H1>I can offer you <HeadingAnimation text={AnimationTexts[animationIndex]} /></H1>
+                <H1>My services are <HeadingAnimation text={AnimationTexts[animationIndex]} /></H1>
                 <H2>You can always get in touch with me trough</H2>
-                <H1>emelie.ek@chasacademy.se</H1>
+                <H2>emelie.ek@chasacademy.se</H2>
             </ContainerInnerCol>
         </Container>
             

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import styled, { keyframes } from "styled-components";
-import H1 from '../../typography/h1';
-import AnimationTexts from '../../pages/Contact'
 
 
 const Animation = keyframes`

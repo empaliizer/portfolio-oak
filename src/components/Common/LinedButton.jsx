@@ -10,9 +10,9 @@ font-family: 'Rubrik', sans-serif;
  
 
 
-const LinedButton = ({children}) => {
+const LinedButton = ({children, href}) => {
   return (
-    <StyledLinedButton>
+    <StyledLinedButton href={href}>
         {children}
     </StyledLinedButton>
     

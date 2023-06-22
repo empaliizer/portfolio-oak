@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { dev } from '../data/data'
 import Container from '../components/Container/Container';
@@ -8,7 +8,6 @@ import Col2 from '../components/Common/Col2';
 import H1 from '../typography/h1';
 import P from '../typography/p';
 import BgImg from '../components/Common/BgImg';
-import WorkImg from '../assets/portfolioImg.png';
 import Line from '../components/Common/Line';
 import LinedButton from '../components/Common/LinedButton';
 import ArrowButton from '../components/Common/ArrowButton';
@@ -41,12 +40,39 @@ const ButtonContainer = styled.div`
 display: flex;
 justify-content: flex-end;
 flex-direction: row;
+
+@media screen and (max-width:900px){
+      justify-content: center;
+    }
 `; 
 
 
 const Work = () => {
 
-    const [slide, setSlide] = useState(0);
+    const [slide, setSlide] = useState(false);
+
+    useEffect(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const page = urlParams.get('page');
+        if(page) {
+            const pageAsNumber = Number(page);
+            if(pageAsNumber >= 0 && pageAsNumber < dev.length) {
+                setSlide(pageAsNumber);
+            } else {
+                setSlide(0);
+            }
+        } else {
+            setSlide(0);
+        }
+    },[]);
+
+    useEffect(() => {
+        if(slide !== false) {
+            let queryParams = new URLSearchParams(window.location.search);
+            queryParams.set('page', slide);  
+            window.history.replaceState(null, null, "?" + queryParams.toString());
+        }
+    }, [slide])
 
     const nextSlide = () => {
         if(slide === dev.length - 1) {
@@ -68,6 +94,11 @@ const Work = () => {
         return dev[slide][field];
     }
     
+    if(slide === false) {
+        return (
+            <></>
+        )
+    }
 
     return (
         <Container>
@@ -80,13 +111,17 @@ const Work = () => {
                         <Category>
                             <P>{ getCurrentSlide('name') }</P>
                             <Line />
-                            <P>DEV</P>
+                            <P>{ getCurrentSlide('cat')}</P>
                         </Category>
                         <Buttons>
                             {/* Glöm inte att lägga in src till knapparna */}
-                            <LinedButton>See code</LinedButton> 
-                            <Line />
-                            <LinedButton>Try it out</LinedButton>
+                            { getCurrentSlide('code') && (
+                                <>
+                                    <LinedButton href={getCurrentSlide('code')}>See code</LinedButton> 
+                                    <Line />
+                                </>
+                            )}
+                            <LinedButton  href={getCurrentSlide('link')}>Prototype</LinedButton>
                         </Buttons>
                     </TopHeading>
                     <TextContainer>
