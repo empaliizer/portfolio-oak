@@ -76,7 +76,7 @@ const dev = [
             img: GGImage,
             link: " https://6362af7fb58cff45bf8b3dbd--idyllic-chaja-f20318.netlify.app/",
             title: 'Guessing game',
-            description: 'abc...'
+            description: 'Welcome to my guessing game. You have 5 chances to guess the correct number between 0-100. If you guess too high or too low, you will receive a notice if you have guessed too high or too low.'
     },
     {
             id: 2,
@@ -84,7 +84,7 @@ const dev = [
             img: RockScisPap,
             link: "https://6362b62d9cc3203c94f25f11--dapper-kangaroo-2986c4.netlify.app/",
             title: 'Rock, paper, scissor',
-            description: 'abc...'
+            description: 'The classic game rock, scissor, paper. You will play against the computer, you will se what you choose and what the computer choose. You can collect points ang the first to 5 wins.'
     },
     {
             id: 3,    
@@ -92,7 +92,7 @@ const dev = [
             img: Resume,
             link: "https://empaliizer.netlify.app/",
             title: 'Resume',
-            description: 'I have worked with HTML, SCSS and Javascript to create this resume. Hope you will like it.'
+            description: 'This is my resume and I have worked with HTML, SCSS and Javascript to create this resume. Hope you will like it.'
         },
         {
             id: 4,
@@ -100,7 +100,7 @@ const dev = [
             img: FantBeauty,
             link: "https://6362a12ce8082d2f4b0f763c--magical-gnome-2b4724.netlify.app/",
             title: 'Fantastic Beauty',
-            description: 'abc...'
+            description: 'Nail and lash saloon that needed a new website for the costumers då book a new appointment, se the pricelists and get contactinfo to the saloon.'
         },
         {
             id: 5,
@@ -108,7 +108,7 @@ const dev = [
             img: FullScreen,
             link: "https://6362abe49cc32033aaf25c51--bucolic-cat-25e33e.netlify.app/",
             title: 'Fullscreen Menu',
-            description: 'abc...'
+            description: 'A fullscreen menu with a hamburger button. It is also responsive.'
         },
         {
             id: 6,
@@ -116,7 +116,7 @@ const dev = [
             img: Piggy,
             link: "https://6362ab4f48363a3fda64b275--incandescent-pony-597e6f.netlify.app/",
             title: 'The pig game',
-            description: 'abc...'
+            description: 'The pig game! The first person that gets 100 points will win. You can stop whenever you want and save you points but if you get 1 on the dice you will loose all your points.'
         },
         {
             id: 7,
@@ -124,8 +124,7 @@ const dev = [
             img: Todo,
             link: "https://6362b969408b8149a58f8f8d--gorgeous-shortbread-ecad98.netlify.app/",
             title: 'Todo app',
-            description: 'abc...'
-    
+            description: 'Created a Todo-list with HTML, SCSS and Javascript. You can write your own todo list. '
         }, 
         {
             id: 8,
